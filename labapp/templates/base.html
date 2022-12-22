@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - service_name</title>
+      {% else %}
+      <title>It's ELECTRIC VEHICLE service:</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>It's ELECTIC VEHICLE service! <a href="/index">Read API</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
